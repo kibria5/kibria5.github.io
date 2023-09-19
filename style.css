@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Space Mono', monospace;
+    overflow: hidden; /* Prevent horizontal scrollbar */
+}
+
+.center {
+    text-align: center;
+    height: 50vh;
+}
+
+h1 {
+    margin-top: 2.5em;
+    font-size: 4rem;
+    animation: colorChange 5s infinite alternate; /* Color-changing animation */
+}
+
+h2 {
+    margin-top: 1em;
+    font-size: 2rem;
+    animation: slideIn 2s ease-in-out; /* Text sliding in animation */
+}
+
+.lilac {
+    color: #bd86ff;
+    transition: color 0.3s ease-in-out; /* Smooth color transition on hover */
+}
+
+.link:hover {
+    color: #bd86ff;
+    transition: color 0.15s ease-in-out;
+}
+
+.white {
+    color: white;
+}
+
+header {
+    height: 20vh;
+}
+
+.buttontop {
+    position: relative;
+    top: 3em;
+    left: 8em;
+    font-size: 2rem;
+    animation: fadeIn 2s ease-in-out; /* Fade-in animation */
+}
+
+.link {
+    text-decoration: none;
+}
+
+.icons {
+    text-align: center;
+    margin-top: 2em;
+}
+
+/* Media Queries (you can adjust these as needed) */
+
+@media (max-width: 1500px) {
+    .buttontop {
+        top: 55px;
+        left: 55px;
+    }
+}
+
+@media (max-width: 600px) {
+    .buttontop {
+        font-size: 1.3rem;
+    }
+
+    h1 {
+        font-size: 2.6rem;
+        margin: 0% 35px;
+    }
+
+    h2 {
+        margin: 0% 35px;
+    }
+
+    .center {
+        margin-top: 100px;
+        height: 45vh;
+    }
+}
+
+/* Keyframe animations */
+
+@keyframes colorChange {
+    0% {
+        color: white;
+    }
+    50% {
+        color: #bd86ff;
+    }
+    100% {
+        color: white;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
