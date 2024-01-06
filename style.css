@@ -1,120 +1,99 @@
-* {
+*{
     margin: 0;
     padding: 0;
-    background-color: black;
-    font-family: 'Space Mono', monospace;
-    overflow: hidden; /* Prevent horizontal scrollbar */
 }
-
-.center {
+body{
+  background-color: #252e41;
+  overflow-x: hidden;
+  position: relative;
+}
+.home{
+    position: relative;
+    height: 79vh;
+    width: 100%;
+    padding: 5px 5px;
+    background-color: #252e41;
+    color: white; 
     text-align: center;
-    height: 50vh;
 }
-
-h1 {
-    margin-top: 2.5em;
-    font-size: 4rem;
-    animation: colorChange 5s infinite alternate; /* Color-changing animation */
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 200px 5px 0px ;
+    color: white; 
 }
-
-h2 {
-    margin-top: 1em;
-    font-size: 2rem;
-    animation: slideIn 2s ease-in-out; /* Text sliding in animation */
+.avatar{
+   height: 15%;
+   width: 15%;
+   object-position: 0 -3px;
+   border: solid white;
+   border-radius: 50%;
 }
-
-.lilac {
-    color: #bd86ff;
-    transition: color 0.3s ease-in-out; /* Smooth color transition on hover */
+.nav {
+    margin: 10px auto; /* Center the navigation horizontally */
+    color: white;
+    padding: 15px 20px;
+    padding-right: 45px;
+    text-align: center;
+    background-color: #273c75;
+    border: 50% solid;
+    border-radius: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 19px;
+    z-index: 99;
+    position: fixed;
+    width: 70%; /* Set the width of the navigation */
+    left: 50%;
+    transform: translateX(-50%); /* Center the navigation horizontally */
 }
-
-.link:hover {
-    color: #bd86ff;
-    transition: color 0.15s ease-in-out;
+.nav li {
+    position: sticky;
+    display: inline-block;
+    margin-left: 25px;
+    list-style-type: none;
+    
 }
-
-.white {
+.nav li a {
+    text-decoration: none;
     color: white;
 }
 
-header {
-    height: 20vh;
+.title{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
 }
-
-.buttontop {
-    position: relative;
-    top: 3em;
-    left: 8em;
-    font-size: 2rem;
-    animation: fadeIn 2s ease-in-out; /* Fade-in animation */
+.description{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 20px;
+    font-weight: bold;
 }
-
-.link {
-    text-decoration: none;
+#contact {
+    display: block;
+    margin-top: 200px;
+    left: 0;
+    background-color: #535c68;
+    width: 100%;
+    height: 15vh;
+    color: white;
 }
-
-.icons {
+.Contact_title{
     text-align: center;
-    margin-top: 2em;
 }
-
-/* Media Queries (you can adjust these as needed) */
-
-@media (max-width: 1500px) {
-    .buttontop {
-        top: 55px;
-        left: 55px;
-    }
+.ico{
+    font-size: 50px;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    top: 0;
+    text-align: center;
+    margin: 20px 10px;
+    left: 49%;
+    transform: translateX(-100%); 
 }
-
-@media (max-width: 600px) {
-    .buttontop {
-        font-size: 1.3rem;
-    }
-
-    h1 {
-        font-size: 2.6rem;
-        margin: 0% 35px;
-    }
-
-    h2 {
-        margin: 0% 35px;
-    }
-
-    .center {
-        margin-top: 100px;
-        height: 45vh;
-    }
-}
-
-/* Keyframe animations */
-
-@keyframes colorChange {
-    0% {
-        color: white;
-    }
-    50% {
-        color: #bd86ff;
-    }
-    100% {
-        color: white;
-    }
-}
-
-@keyframes slideIn {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+.ico:hover{
+   opacity: 0.8;
+   color: #273c75;
+   transition: 0.9s;
 }
